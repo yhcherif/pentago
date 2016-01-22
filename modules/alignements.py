@@ -1,3 +1,4 @@
+# Verifie un alignement de p valeurs de j dans le sens horizontal
 def alignHoriz(n, list, p, j):
     count = 1
     state = False
@@ -13,7 +14,7 @@ def alignHoriz(n, list, p, j):
 
     return state
 
-
+# Verifie un alignement de p valeurs de j dans le sens vertical
 def alignVert(n, list, p, j):
     count = 1
     state = False
@@ -28,7 +29,7 @@ def alignVert(n, list, p, j):
                 break
     return state
 
-
+# Verifie un alignement de p valeurs de j en diagonale de bas gauche vers haut droit
 def alignLeftDiag(n, list, p, j):
     count = 1
     state = False
@@ -41,7 +42,7 @@ def alignLeftDiag(n, list, p, j):
         state = True
     return state
 
-
+# Verifie un alignement de p valeurs de j en diagonale de haut gauche vers bas droit
 def alignRightDiag(n, list, p, j):
     count = 1
     state = False
@@ -54,7 +55,7 @@ def alignRightDiag(n, list, p, j):
         state = True
     return state
 
-
+# Verifie un alignement de p valeurs de j dans au moins une des quatres directions
 def align(list, n, p, j):
     states = [alignHoriz(n, list, p, j),
               alignVert(n, list, p, j),

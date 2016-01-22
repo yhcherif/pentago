@@ -1,17 +1,15 @@
-
 def initBoard(n):
-    board = []
+    plateau = []
     for i in range(0, n):
-        board.append([])
+        plateau.append([])
         for j in range(0, n):
-            board[i].append(0)
-    return board
+            plateau[i].append(0)
+    return plateau
 
-
-def display(board):
-    n = len(board)
+def affichePlateau(plateau):
+    n = len(plateau)
     print ""
     for i in range(0, n):
         for j in range(0, n):
-            print "\t",board[i][j],
+            print "\t",plateau[i][j],
         print ""

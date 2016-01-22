@@ -1,3 +1,4 @@
+# Roation d'une liste dans le sens des aiguilles d'une montre
 def clockWise(board, m):
     rotated = [[0 for x in range(0, m)] for y in range(0, m)]
     limit = m -1
@@ -6,7 +7,7 @@ def clockWise(board, m):
             rotated[j][ limit - i] = board[i][j]
     return rotated
 
-
+# Roation d'une liste dans le sens contraire des aiguilles d'une montre
 def reverseClockWise(board, m):
     rotated = [[0 for x in range(0, m)] for y in range(0, m)]
     limit = m -1
@@ -16,7 +17,7 @@ def reverseClockWise(board, m):
     return rotated
 
 
-
+# Effectue la rotation du quadrant d'une liste selon le sens passe en parametre
 def rotate(n, list, quardrant, direction):
     x =0;
     y =0;
